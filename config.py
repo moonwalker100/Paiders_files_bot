@@ -34,7 +34,7 @@ DB_NAME = os.environ.get("DATABASE_NAME", "PyFiles")
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #Collection of pics for Bot // #Optional but atleast one pic link should be replaced if you don't want predefined links
-PICS = (os.environ.get("PICS", "https://envs.sh/Vx5.jpg https://envs.sh/VxL.jpg https://envs.sh/Vxc.jpg https://envs.sh/V8O.jpg https://envs.sh/V8m.jpg https://envs.sh/V8X.jpg https://envs.sh/V8y.jpg")).split() #Required
+PICS = (os.environ.get("PICS", "https://envs.sh/JHA.jpg https://envs.sh/JHZ.jpg https://envs.sh/JH5.jpg https://envs.sh/JHG.jpg https://envs.sh/JOk.jpg https://envs.sh/V8X.jpg https://envs.sh/JO8.jpg")).split() #Required
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
