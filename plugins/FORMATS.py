@@ -2,10 +2,10 @@
 
 #text formatting....
 
-on_pic = ""
-off_pic = ""
-files_cmd_pic = ""
-autodel_cmd_pic = ""
+on_pic = "https://envs.sh/VxL.jpg"
+off_pic = "https://envs.sh/Vx5.jpg"
+files_cmd_pic = "https://envs.sh/Vx_.jpg"
+autodel_cmd_pic = "https://envs.sh/Vxc.jpg"
 
 #start message
 START_MSG = """<b>⚡ Hᴇʏ, {mention} ~
