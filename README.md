@@ -1,5 +1,5 @@
 ### <h1>ADVANCE FILE SHARING BOT V3 🤖</h1>
-<img src="https://telegra.ph/file/ff8fbe7d67a3c7492c353.jpg">
+<img src="https://envs.sh/sXa.jpg">
 <blockquote><b>THIS IS AN ADVANCE FILE SHARING BOT WITH REQUEST FORCE-FSUB, MADE BY ➪ <a href="https://t.me/Shidoteshika1">King 王</a><br> HERE ONLY THE HIGHLIGHTTED FEATURES ARE MENTIONED BELOW ;</b></blockquote>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
