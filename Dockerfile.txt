@@ -1,16 +1,9 @@
-# Use a stable Python image
-FROM python:3.10-slim
-
-# Set working directory
+FROM python:3.13-slim-bookworm
 WORKDIR /app
 
-# Copy dependency list and install first (for caching)
-COPY requirements.txt .
+COPY requirements.txt requirements.txt
+RUN pip3 install -r requirements.txt
 
-RUN pip install --no-cache-dir -r requirements.txt
-
-# Copy the rest of the code
 COPY . .
 
-# Start the bot (update "main.py" if your entry file has a different name)
-CMD ["python3", "bot.py"]
+CMD python3 main.py
