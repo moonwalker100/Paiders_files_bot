@@ -1,4 +1,4 @@
-# +++ Made By King [telegram username: @Shidoteshika1] +++
+# +++ Made By King [telegram username: @Here_remo] +++
 
 from aiohttp import web
 from plugins import web_server
@@ -51,9 +51,9 @@ class Bot(Client):
             sys.exit()
 
         self.set_parse_mode(ParseMode.HTML)
-        self.LOGGER(__name__).info(f"Aᴅᴠᴀɴᴄᴇ Fɪʟᴇ-Sʜᴀʀɪɴɢ ʙᴏᴛV3 Mᴀᴅᴇ Bʏ ➪ @Shidoteshika1 [Tᴇʟᴇɢʀᴀᴍ Usᴇʀɴᴀᴍᴇ]")
-        self.LOGGER(__name__).info(f"{self.name} Bot Running..!")
-        self.LOGGER(__name__).info(f"OPERATION SUCCESSFULL ✅")
+        self.LOGGER(__name__).info(f"Aᴅᴠᴀɴᴄᴇ Fɪʟᴇ-Sʜᴀʀɪɴɢ ʙᴏᴛ V3 | Mᴀᴅᴇ Bʏ ➪ @Here_remo [Tᴇʟᴇɢʀᴀᴍ Usᴇʀɴᴀᴍᴇ]")
+        self.LOGGER(__name__).info(f"{self.name} Bot Running..! properly")
+        self.LOGGER(__name__).info(f"OPERATION SUCCESSFULL COMPLETED ✅")
         #web-response
         app = web.AppRunner(await web_server())
         await app.setup()
