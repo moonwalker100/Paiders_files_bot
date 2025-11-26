@@ -1,4 +1,4 @@
-# +++ Made By King [telegram username: @Shidoteshika1] +++
+# +++ Made By [telegram username: @@Here_remo] +++
 
 import random
 from bot import Bot
