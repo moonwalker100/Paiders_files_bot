@@ -2,7 +2,7 @@
 import motor.motor_asyncio
 from config import DB_URI, DB_NAME
 
-class remoDataBase:
+class SidDataBase:
 
     def __init__(self, DB_URI, DB_NAME):
         self.dbclient = motor.motor_asyncio.AsyncIOMotorClient(DB_URI)
@@ -308,4 +308,4 @@ class remoDataBase:
         await self.store_reqLink_data.delete_one({'_id': channel_id})
 
 
-remodb = remoDataBase(DB_URI, DB_NAME)
+kingdb = SidDataBase(DB_URI, DB_NAME)
