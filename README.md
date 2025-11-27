@@ -60,7 +60,8 @@
 
 <details><summary><b> - ᴀᴅᴍɪɴ ᴀɴᴅ ᴜsᴇʀs ᴄᴏᴍᴍᴀɴᴅs :</b></summary>
 
-## ᴀᴅᴍɪɴ ᴀɴᴅ ᴜsᴇʀs ᴄᴏᴍᴍᴀɴᴅs
+### ⚠️ ᴀᴅᴍɪɴ,ᴜsᴇʀs ᴄᴏᴍᴍᴀɴᴅs,ᴠᴀʀɪᴀʙʟᴇs:
+```
 start - ⚡️ ᴄʜᴇᴄᴋ ᴀʟɪᴠᴇ/ᴅᴇᴀᴅ !
 help - ⚡️ ɪɴsᴛʀᴜᴄᴛɪᴏɴ ғᴏʀ ᴜsɪɴɢ ʙᴏᴛ
 users - 👀 ᴠɪᴇᴡ ᴜsᴇʀ sᴇᴛᴛɪɴɢ ᴄᴏᴍᴍᴀɴᴅs
@@ -70,6 +71,8 @@ files - ⚙️ ᴠɪᴇᴡ ᴍᴇssᴀɢᴇ/ғɪʟᴇs ʀᴇʟᴀᴛᴇᴅ sᴇ�
 auto_del - ⚙️ ᴠɪᴇᴡ ᴀᴜᴛᴏ ᴅᴇʟᴇᴛᴇ sᴇᴛᴛɪɴɢs 
 cmd - ⚠️ ᴠɪᴇᴡ ʙᴀsɪᴄ ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅs (ᴀᴅᴍɪɴs)
 restart - ⚠️ ғᴏʀᴄᴇғᴜʟʟʏ ʀᴇsᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ (ᴏᴡɴᴇʀ)
+```
+</details>
 
 <details><summary><b> - ᴠᴀʀɪᴀʙʟᴇs (ᴠᴘs/ʟᴏᴄᴀʟ) :</b></summary>
 <summary><h3>
@@ -82,11 +85,6 @@ restart - ⚠️ ғᴏʀᴄᴇғᴜʟʟʏ ʀᴇsᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ (�
 - pip3 install -U -r requirements.txt
 - Edit config.py with variables as given below then run bot
 - python3 main.py
-
-<p align="center">
-  <img src="https://graph.org/file/c7727a6d27332ffcd8f03.jpg">
-</p>
-
 
 </details>
 
