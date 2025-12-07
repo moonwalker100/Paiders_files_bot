@@ -11,7 +11,7 @@ from pyrogram import Client, filters
 from helper_func import is_admin, get_readable_time, banUser
 from plugins.FORMATS import HELP_TEXT, BAN_TXT, CMD_TXT, USER_CMD_TXT, FSUB_CMD_TXT
 from pyrogram.errors import FloodWait, UserIsBlocked, InputUserDeactivated
-from database.database import kingdb 
+from database import kingdb 
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
 REPLY_ERROR = """Usᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴀs ᴀ ʀᴇᴘʟʏ ᴛᴏ ᴀɴʏ Tᴇʟᴇɢʀᴀᴍ ᴍᴇssᴀɢᴇ ᴡɪᴛʜᴏᴜᴛ ᴀɴʏ sᴘᴀᴄᴇs."""
