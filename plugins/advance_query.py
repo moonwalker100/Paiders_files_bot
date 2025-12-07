@@ -6,7 +6,7 @@ from plugins.FORMATS import *
 from config import OWNER_ID, PICS
 from pyrogram.enums import ChatAction
 from plugins.autoDelete import convert_time
-from database.database import kingdb
+from database import kingdb
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery, InputMediaPhoto, ReplyKeyboardMarkup, ReplyKeyboardRemove    
 
 #File setting function for retriveing modes and state of file related setting
