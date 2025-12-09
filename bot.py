@@ -61,13 +61,18 @@ await runner.setup()
 bind_address = "0.0.0.0"
 await web.TCPSite(runner, bind_address, PORT).start()
 
-        try:
-    await self.send_message(
-        OWNER_ID,
-        text="<b><blockquote>🤖 Bᴏᴛ Rᴇsᴛᴀʀᴛᴇᴅ ♻️</blockquote></b>"
-    )
-except:
-    pass
+async def start(self):
+    await super().start()
+    
+    # ... other startup code ...
+
+    try:
+        await self.send_message(
+            OWNER_ID,
+            text="<b><blockquote>🤖 Bᴏᴛ Rᴇsᴛᴀʀᴛᴇᴅ ♻️</blockquote></b>"
+        )
+    except:
+        pass
 
     async def stop(self, *args):
         await super().stop()
