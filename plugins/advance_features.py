@@ -370,27 +370,29 @@ async def autoDelete_settings(client, message):
     await message.reply_chat_action(ChatAction.TYPING)
 
     try:
-            timer = convert_time(await kingdb.get_del_timer())
-            if await kingdb.get_auto_delete():
-                autodel_mode = on_txt
-                mode = 'Dɪsᴀʙʟᴇ Mᴏᴅᴇ ❌'
-            else:
-                autodel_mode = off_txt
-                mode = 'Eɴᴀʙʟᴇ Mᴏᴅᴇ ✅'
-            
-            await message.reply_photo(
-                photo = autodel_cmd_pic,
-                caption = AUTODEL_CMD_TXT.format(autodel_mode=autodel_mode, timer=timer),
-                reply_markup = InlineKeyboardMarkup([
-                    [InlineKeyboardButton(mode, callback_data='chng_autodel'), InlineKeyboardButton('◈ Sᴇᴛ Tɪᴍᴇʀ ⏱', callback_data='set_timer')],
-                    [InlineKeyboardButton('🔄 Rᴇғʀᴇsʜ', callback_data='autodel_cmd'), InlineKeyboardButton('Cʟᴏsᴇ ✖️', callback_data='close')]
-                ]),
-                message_effect_id = 5107584321108051014 #👍
-            )
+        timer = convert_time(await kingdb.get_del_timer())
+        if await kingdb.get_auto_delete():
+            autodel_mode = on_txt
+            mode = 'Dɪsᴀʙʟᴇ Mᴏᴅᴇ ❌'
+        else:
+            autodel_mode = off_txt
+            mode = 'Eɴᴀʙʟᴇ Mᴏᴅᴇ ✅'
+        
+        await message.reply_photo(
+            photo=autodel_cmd_pic,
+            caption=AUTODEL_CMD_TXT.format(autodel_mode=autodel_mode, timer=timer),
+            reply_markup=InlineKeyboardMarkup([
+                [InlineKeyboardButton(mode, callback_data='chng_autodel'), InlineKeyboardButton('◈ Sᴇᴛ Tɪᴍᴇʀ ⏱', callback_data='set_timer')],
+                [InlineKeyboardButton('🔄 Rᴇғʀᴇsʜ', callback_data='autodel_cmd'), InlineKeyboardButton('Cʟᴏsᴇ ✖️', callback_data='close')]
+            ]),
+            message_effect_id=5107584321108051014
+        )
     except Exception as e:
-            reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("Cʟᴏsᴇ ✖️", callback_data = "close")]])
-            await message.reply(f"<b>! Eʀʀᴏʀ Oᴄᴄᴜʀᴇᴅ..\n<blockquote>Rᴇᴀsᴏɴ:</b> {e}</blockquote><b><i>Cᴏɴᴛᴀɴᴄᴛ ᴅᴇᴠᴇʟᴏᴘᴇʀ: @Shidoteshika1</i></b>", reply_markup=reply_markup)
-
+        reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("Cʟᴏsᴇ ✖️", callback_data="close")]])
+        await message.reply(
+            f"<b>! Eʀʀᴏʀ Oᴄᴄᴜʀᴇᴅ..\n<blockquote>Rᴇᴀsᴏɴ:</b> {e}</blockquote><b><i>Cᴏɴᴛᴀᴄᴛ ᴅᴇᴠᴇʟᴏᴘᴇʀ: @Shidoteshika1</i></b>",
+            reply_markup=reply_markup
+        )
 #Files related settings command
 @Bot.on_message(filters.command('files') & filters.private & ~banUser)
 async def files_commands(client: Client, message: Message):
