@@ -1,7 +1,7 @@
 # +++ Made By King [telegram username: @Here_remo] +++
 
 from aiohttp import web
-from plugins import web_server
+from plugins.web_server import web_server
 
 import asyncio
 import pyromod.listen
@@ -54,11 +54,12 @@ class Bot(Client):
         self.LOGGER(__name__).info(f"Aᴅᴠᴀɴᴄᴇ Fɪʟᴇ-Sʜᴀʀɪɴɢ ʙᴏᴛ V3 | Mᴀᴅᴇ Bʏ ➪ @Here_remo [Tᴇʟᴇɢʀᴀᴍ Usᴇʀɴᴀᴍᴇ]")
         self.LOGGER(__name__).info(f"{self.name} Bot Running..! properly")
         self.LOGGER(__name__).info(f"OPERATION SUCCESSFULL COMPLETED ✅")
-        #web-response
-        app = web.AppRunner(await web_server())
-        await app.setup()
-        bind_address = "0.0.0.0"
-        await web.TCPSite(app, bind_address, PORT).start()
+        # Web server setup
+app_instance = await web_server()               # call the async function
+runner = web.AppRunner(app_instance)           # create AppRunner
+await runner.setup()
+bind_address = "0.0.0.0"
+await web.TCPSite(runner, bind_address, PORT).start()
 
         try: await self.send_message(OWNER_ID, text = f"<b><blockquote>🤖 Bᴏᴛ Rᴇsᴛᴀʀᴛᴇᴅ ♻️</blockquote></b>")
         except: pass
