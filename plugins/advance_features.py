@@ -411,22 +411,31 @@ async def files_commands(client: Client, message: Message):
             cbd = '✅'
         name, link = await kingdb.get_channel_button_link()
         
-        await message.reply_photo(
-            photo = files_cmd_pic,
-            caption = FILES_CMD_TXT.format(
-                protect_content = protect_content,
-                hide_caption = hide_caption,
-                channel_button = channel_button,
-                name = name,
-                link = link
-            ),
-            reply_markup = InlineKeyboardMarkup(
-                [InlineKeyboardButton(f'Pʀᴏᴛᴇᴄᴛ Cᴏɴᴛᴇɴᴛ: {pcd}', callback_data='pc'), InlineKeyboardButton(f'Hɪᴅᴇ Cᴀᴘᴛɪᴏɴ: {hcd}', callback_data='hc')],
-                [InlineKeyboardButton(f'Cʜᴀɴɴᴇʟ Bᴜᴛᴛᴏɴ: {cbd}', callback_data='cb'), InlineKeyboardButton(f'◈ Sᴇᴛ Bᴜᴛᴛᴏɴ ➪', callback_data='setcb')],
-                [InlineKeyboardButton('🔄 Rᴇғʀᴇsʜ', callback_data='files_cmd'), InlineKeyboardButton('Cʟᴏsᴇ ✖️', callback_data='close')]
-            ]),
-            message_effect_id = 5107584321108051014 #👍
-        )
+    await message.reply_photo(
+    photo = files_cmd_pic,
+    caption = FILES_CMD_TXT.format(
+        protect_content = protect_content,
+        hide_caption = hide_caption,
+        channel_button = channel_button,
+        name = name,
+        link = link
+    ),
+    reply_markup = InlineKeyboardMarkup([
+        [
+            InlineKeyboardButton(f'Pʀᴏᴛᴇᴄᴛ Cᴏɴᴛᴇɴᴛ: {pcd}', callback_data='pc'),
+            InlineKeyboardButton(f'Hɪᴅᴇ Cᴀᴘᴛɪᴏɴ: {hcd}', callback_data='hc')
+        ],
+        [
+            InlineKeyboardButton(f'Cʜᴀɴɴᴇʟ Bᴜᴛᴛᴏɴ: {cbd}', callback_data='cb'),
+            InlineKeyboardButton('◈ Sᴇᴛ Bᴜᴛᴛᴏɴ ➪', callback_data='setcb')
+        ],
+        [
+            InlineKeyboardButton('🔄 Rᴇғʀᴇsʜ', callback_data='files_cmd'),
+            InlineKeyboardButton('Cʟᴏsᴇ ✖️', callback_data='close')
+        ]
+    ]),
+    message_effect_id = 5107584321108051014
+    )
     except Exception as e:
         reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("Cʟᴏsᴇ ✖️", callback_data = "close")]])
         await message.reply(f"<b>! Eʀʀᴏʀ Oᴄᴄᴜʀᴇᴅ..\n<blockquote>Rᴇᴀsᴏɴ:</b> {e}</blockquote><b><i>Cᴏɴᴛᴀɴᴄᴛ ᴅᴇᴠᴇʟᴏᴘᴇʀ: @metaui</i></b>", reply_markup=reply_markup)
