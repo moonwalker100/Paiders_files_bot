@@ -369,28 +369,31 @@ async def get_banuser_list(client:Client, message: Message):
 async def autoDelete_settings(client, message):
     await message.reply_chat_action(ChatAction.TYPING)
 
-    try:
-            timer = convert_time(await kingdb.get_del_timer())
-            if await kingdb.get_auto_delete():
-                autodel_mode = on_txt
-                mode = 'Dɪsᴀʙʟᴇ Mᴏᴅᴇ ❌'
-            else:
-                autodel_mode = off_txt
-                mode = 'Eɴᴀʙʟᴇ Mᴏᴅᴇ ✅'
-            
-            await message.reply_photo(
-                photo = autodel_cmd_pic,
-                caption = AUTODEL_CMD_TXT.format(autodel_mode=autodel_mode, timer=timer),
-                reply_markup = InlineKeyboardMarkup([
-                    [InlineKeyboardButton(mode, callback_data='chng_autodel'), InlineKeyboardButton('◈ Sᴇᴛ Tɪᴍᴇʀ ⏱', callback_data='set_timer')],
-                    [InlineKeyboardButton('🔄 Rᴇғʀᴇsʜ', callback_data='autodel_cmd'), InlineKeyboardButton('Cʟᴏsᴇ ✖️', callback_data='close')]
-                ]),
-                message_effect_id = 5107584321108051014 #👍
-            )
-    except Exception as e:
-            reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("Cʟᴏsᴇ ✖️", callback_data = "close")]])
-            await message.reply(f"<b>! Eʀʀᴏʀ Oᴄᴄᴜʀᴇᴅ..\n<blockquote>Rᴇᴀsᴏɴ:</b> {e}</blockquote><b><i>Cᴏɴᴛᴀɴᴄᴛ ᴅᴇᴠᴇʟᴏᴘᴇʀ: @metaui</i></b>", reply_markup=reply_markup)
-            
+try:
+    timer = convert_time(await kingdb.get_del_timer())
+    if await kingdb.get_auto_delete():
+        autodel_mode = on_txt
+        mode = 'Dɪsᴀʙʟᴇ Mᴏᴅᴇ ❌'
+    else:
+        autodel_mode = off_txt
+        mode = 'Eɴᴀʙʟᴇ Mᴏᴅᴇ ✅'
+
+    await message.reply_photo(
+        photo = autodel_cmd_pic,
+        caption = AUTODEL_CMD_TXT.format(autodel_mode=autodel_mode, timer=timer),
+        reply_markup = InlineKeyboardMarkup([
+            [InlineKeyboardButton(mode, callback_data='chng_autodel'), InlineKeyboardButton('◈ Sᴇᴛ Tɪᴍᴇʀ ⏱', callback_data='set_timer')],
+            [InlineKeyboardButton('🔄 Rᴇғʀᴇsʜ', callback_data='autodel_cmd'), InlineKeyboardButton('Cʟᴏsᴇ ✖️', callback_data='close')]
+        ]),
+        message_effect_id = 5107584321108051014
+    )
+
+except Exception as e:
+    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("Cʟᴏsᴇ ✖️", callback_data="close")]])
+    await message.reply(
+        f"<b>! Eʀʀᴏʀ Oᴄᴄᴜʀᴇᴅ..\n<blockquote>Rᴇᴀsᴏɴ:</b> {e}</blockquote><b><i>Cᴏɴᴛᴀɴᴄᴛ ᴅᴇᴠᴇʟᴏᴘᴇʀ: @metaui</i></b>",
+        reply_markup=reply_markup
+    )
 
 #Files related settings command
 @Bot.on_message(filters.command('files') & filters.private & ~banUser)
@@ -411,31 +414,22 @@ async def files_commands(client: Client, message: Message):
             cbd = '✅'
         name, link = await kingdb.get_channel_button_link()
         
-    await message.reply_photo(
-    photo = files_cmd_pic,
-    caption = FILES_CMD_TXT.format(
-        protect_content = protect_content,
-        hide_caption = hide_caption,
-        channel_button = channel_button,
-        name = name,
-        link = link
-    ),
-    reply_markup = InlineKeyboardMarkup([
-        [
-            InlineKeyboardButton(f'Pʀᴏᴛᴇᴄᴛ Cᴏɴᴛᴇɴᴛ: {pcd}', callback_data='pc'),
-            InlineKeyboardButton(f'Hɪᴅᴇ Cᴀᴘᴛɪᴏɴ: {hcd}', callback_data='hc')
-        ],
-        [
-            InlineKeyboardButton(f'Cʜᴀɴɴᴇʟ Bᴜᴛᴛᴏɴ: {cbd}', callback_data='cb'),
-            InlineKeyboardButton('◈ Sᴇᴛ Bᴜᴛᴛᴏɴ ➪', callback_data='setcb')
-        ],
-        [
-            InlineKeyboardButton('🔄 Rᴇғʀᴇsʜ', callback_data='files_cmd'),
-            InlineKeyboardButton('Cʟᴏsᴇ ✖️', callback_data='close')
-        ]
-    ]),
-    message_effect_id = 5107584321108051014
-    )
+        await message.reply_photo(
+            photo = files_cmd_pic,
+            caption = FILES_CMD_TXT.format(
+                protect_content = protect_content,
+                hide_caption = hide_caption,
+                channel_button = channel_button,
+                name = name,
+                link = link
+            ),
+            reply_markup = InlineKeyboardMarkup([
+                [InlineKeyboardButton(f'Pʀᴏᴛᴇᴄᴛ Cᴏɴᴛᴇɴᴛ: {pcd}', callback_data='pc'), InlineKeyboardButton(f'Hɪᴅᴇ Cᴀᴘᴛɪᴏɴ: {hcd}', callback_data='hc')],
+                [InlineKeyboardButton(f'Cʜᴀɴɴᴇʟ Bᴜᴛᴛᴏɴ: {cbd}', callback_data='cb'), InlineKeyboardButton(f'◈ Sᴇᴛ Bᴜᴛᴛᴏɴ ➪', callback_data='setcb')],
+                [InlineKeyboardButton('🔄 Rᴇғʀᴇsʜ', callback_data='files_cmd'), InlineKeyboardButton('Cʟᴏsᴇ ✖️', callback_data='close')]
+            ]),
+            message_effect_id = 5107584321108051014 #👍
+        )
     except Exception as e:
         reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("Cʟᴏsᴇ ✖️", callback_data = "close")]])
         await message.reply(f"<b>! Eʀʀᴏʀ Oᴄᴄᴜʀᴇᴅ..\n<blockquote>Rᴇᴀsᴏɴ:</b> {e}</blockquote><b><i>Cᴏɴᴛᴀɴᴄᴛ ᴅᴇᴠᴇʟᴏᴘᴇʀ: @metaui</i></b>", reply_markup=reply_markup)
@@ -462,4 +456,4 @@ async def handle_reqFsub(client: Client, message: Message):
         
     except Exception as e:
         reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("Cʟᴏsᴇ ✖️", callback_data = "close")]])
-        await message.reply(f"<b>! Eʀʀᴏʀ Oᴄᴄᴜʀᴇᴅ..\n<blockquote>Rᴇᴀsᴏɴ:</b> {e}</blockquote><b><i>Cᴏɴᴛᴀɴᴄᴛ ᴅᴇᴠᴇʟᴏᴘᴇʀ: @Here_remo</i></b>", reply_markup=reply_markup)
+        await message.reply(f"<b>! Eʀʀᴏʀ Oᴄᴄᴜʀᴇᴅ..\n<blockquote>Rᴇᴀsᴏɴ:</b> {e}</blockquote><b><i>Cᴏɴᴛᴀɴᴄᴛ ᴅᴇᴠᴇʟᴏᴘᴇʀ: @metaUi</i></b>", reply_markup=reply_markup)
