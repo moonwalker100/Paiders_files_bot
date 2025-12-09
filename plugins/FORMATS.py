@@ -2,7 +2,7 @@
 
 #text formatting....
 
-on_pic = "https://envs.sh/VxL.jpg"
+on_pic = "https://graph.org/file/6b3b30c050fcf3da727b4-60401beca28ed88771.jpg"
 off_pic = "https://envs.sh/Vx5.jpg"
 files_cmd_pic = "https://envs.sh/Vx_.jpg"
 autodel_cmd_pic = "https://envs.sh/Vxc.jpg"
