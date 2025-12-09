@@ -1,7 +1,7 @@
 # +++ Made By King [telegram username: @Shidoteshika1] +++
 
 from aiohttp import web
-from plugins import web_server
+from plugins.web_server import web_server
 
 import asyncio
 import pyromod.listen
