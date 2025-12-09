@@ -63,8 +63,6 @@ class Bot(Client):
 
         try: await self.send_message(OWNER_ID, text = f"<b><blockquote>🤖 Bᴏᴛ Rᴇsᴛᴀʀᴛᴇᴅ ♻️</blockquote></b>")
         except: pass
-        from plugins.prem import initialize_premium_system
-        asyncio.create_task(initialize_premium_system())
         
     async def stop(self, *args):
         await super().stop()
