@@ -9,7 +9,7 @@ from bot import Bot
 from database.database import kingdb
 from pyrogram import Client, filters
 from pyrogram.errors import FloodWait
-from plugins.FORMATS import START_MSG, FORCE_MSG
+from plugins.FORMATS import START_MSG, FORCE_MSG, HELP_MSG
 from pyrogram.enums import ParseMode, ChatAction
 from config import CUSTOM_CAPTION, OWNER_ID, PICS
 from plugins.autoDelete import auto_del_notification, delete_message
@@ -104,7 +104,7 @@ async def start_command(client: Client, message: Message):
                         
     else:   
         reply_markup=InlineKeyboardMarkup([
-                    [InlineKeyboardButton("ғᴏʀ ᴍᴏʀᴇ", url='https://t.me/loading_cluster_bots')],
+                    [InlineKeyboardButton("🆘 Hᴇʟᴘ", callback_data='help')],,
                     [InlineKeyboardButton("Aʙᴏᴜᴛ 🤖", callback_data='about'),
                      InlineKeyboardButton('Sᴇᴛᴛɪɴɢs', callback_data='setting')],
                     [InlineKeyboardButton("Oᴜʀ Cᴏᴍᴍᴜɴɪᴛʏ", url='https://t.me/loading_cluster_bots')],
