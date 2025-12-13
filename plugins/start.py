@@ -104,10 +104,10 @@ async def start_command(client: Client, message: Message):
                         
     else:   
         reply_markup=InlineKeyboardMarkup([
-                    [InlineKeyboardButton("ғᴏʀ ᴍᴏʀᴇ", url='https://t.me/play_tamil_dubbed_series')],
+                    [InlineKeyboardButton("ғᴏʀ ᴍᴏʀᴇ", url='https://t.me/loading_cluster_bots')],
                     [InlineKeyboardButton("Aʙᴏᴜᴛ 🤖", callback_data='about'),
                      InlineKeyboardButton('Sᴇᴛᴛɪɴɢs', callback_data='setting')],
-                    [InlineKeyboardButton("Oᴜʀ Cᴏᴍᴍᴜɴɪᴛʏ", url='https://t.me/loading_cluster')],
+                    [InlineKeyboardButton("Oᴜʀ Cᴏᴍᴍᴜɴɪᴛʏ", url='https://t.me/loading_cluster_bots')],
                 ])
         await message.reply_photo(
             photo = random.choice(PICS),
