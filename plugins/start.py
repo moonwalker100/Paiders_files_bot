@@ -104,7 +104,7 @@ async def start_command(client: Client, message: Message):
                         
     else:   
         reply_markup=InlineKeyboardMarkup([
-                    [InlineKeyboardButton("Dᴇᴠᴇʟᴏᴘᴇʀ 🎀", url='https://t.me/Here_remo')],,
+                    [InlineKeyboardButton("Dᴇᴠᴇʟᴏᴘᴇʀ 🎀", url='https://t.me/Here_remo')],
                     [InlineKeyboardButton("Aʙᴏᴜᴛ 🤖", callback_data='about'),
                      InlineKeyboardButton('Sᴇᴛᴛɪɴɢs ⚙️', callback_data='setting')],
                     [InlineKeyboardButton("Oᴜʀ Cᴏᴍᴍᴜɴɪᴛʏ 🌆", url='https://t.me/loading_cluster_bots')],
