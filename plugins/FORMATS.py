@@ -1,4 +1,4 @@
-# +++ made by [telegram username: @@Here_remo] +++
+# +++ made by [telegram username: @Here_remo] +++
 
 #text formatting....
 
@@ -9,8 +9,7 @@ autodel_cmd_pic = "https://envs.sh/Vxc.jpg"
 
 #start message
 START_MSG = """<b>⚡ Hᴇʏ, {mention} ~
-
-<blockquote expandable>I ᴀᴍ ᴀɴ ᴀᴅᴠᴀɴᴄᴇ ғɪʟᴇ sʜᴀʀᴇ ʙᴏᴛ V3!\nTʜᴇ ʙᴇsᴛ ᴘᴀʀᴛ ɪs ɪ ᴀᴍ ᴀʟsᴏ sᴜᴘᴘᴏʀᴛ ʀᴇǫᴜᴇsᴛ ғᴏʀᴄᴇsᴜʙ ғᴇᴀᴛᴜʀᴇ, Tᴏ ᴋɴᴏᴡ ᴅᴇᴛᴀɪʟᴇᴅ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴄʟɪᴄᴋ ᴀʙᴏᴜᴛ ᴍᴇ ʙᴜᴛᴛᴏɴ ᴛᴏ ᴋɴᴏᴡ ᴍʏ ᴀʟʟ ᴀᴅᴠᴀɴᴄᴇ ғᴇᴀᴛᴜʀᴇs!.</blockquote></b>"""
+<blockquote expandable> Wʜᴇɴ ᴄʜᴀᴏꜱ ʀɪꜱᴇꜱ ᴀɢᴀɪɴꜱᴛ ᴍᴇ, I ᴀɴꜱᴡᴇʀ ᴡɪᴛʜ ᴄᴏᴜʀᴀɢᴇ ʙʀɪɢʜᴛ ᴇɴᴏᴜɢʜ ᴛᴏ ꜱᴇᴛ ᴛʜᴇ ꜱᴛᴀʀꜱ ᴀʙʟᴀᴢᴇ.</blockquote></b>"""
 
 #Force sub message 
 FORCE_MSG = """<b><blockquote>⚠️ Hᴇʏ, {mention} ×</blockquote>
@@ -50,7 +49,7 @@ ABOUT_TXT = """<b>🤖 ᴍʏ ɴᴀᴍᴇ: {botname}
 » ʟɪʙʀᴀʀʏ: <a href=https://docs.pyrogram.org/>Pʏʀᴏɢʀᴀᴍ ᴠ2</a>
 » ᴅᴇᴠᴇʟᴏᴘᴇʀ: <a href=https://t.me/Here_remo>Ꮢᴇᴍᴏ</a></blockquote></b>"""
 
-SETTING_TXT = """<b>⚙️ Cᴏɴғɪɢᴜʀᴀᴛɪᴏɴs</b>
+SETTING_TXT = """<b>⚙️ 𝗖𝗢𝗡𝗙𝗜𝗚𝗨𝗥𝗔𝗧𝗜𝗢𝗡</b>
 <blockquote expandable>◈ ᴛᴏᴛᴀʟ ғᴏʀᴄᴇ sᴜʙ ᴄʜᴀɴɴᴇʟ:  <b>{total_fsub}</b>
 ◈ ᴛᴏᴛᴀʟ ᴀᴅᴍɪɴs:  <b>{total_admin}</b>
 ◈ ᴛᴏᴛᴀʟ ʙᴀɴɴᴇᴅ ᴜsᴇʀs:  <b>{total_ban}</b>
@@ -64,8 +63,8 @@ on_txt, off_txt = "Eɴᴀʙʟᴇᴅ ✅", "Dɪsᴀʙʟᴇᴅ ❌"
 
 FILES_CMD_TXT ="""<b>🤖 𝗙𝗜𝗟𝗘𝗦 𝗥𝗘𝗟𝗔𝗧𝗘𝗗 𝗦𝗘𝗧𝗧𝗜𝗡𝗚𝗦 ⚙️
 
-<blockquote expandable>🔒 ᴘʀᴏᴛᴇᴄᴛ ᴄᴏɴᴛᴇɴᴛ: {protect_content}
-🫥 ʜɪᴅᴇ ᴄᴀᴘᴛɪᴏɴ: {hide_caption}
+<blockquote expandable>🌀 ᴘʀᴏᴛᴇᴄᴛ ᴄᴏɴᴛᴇɴᴛ: {protect_content}
+📜 ʜɪᴅᴇ ᴄᴀᴘᴛɪᴏɴ: {hide_caption}
 🔘 ᴄʜᴀɴɴᴇʟ ʙᴜᴛᴛᴏɴ: {channel_button}</b>
 
 ◈ ʙᴜᴛᴛᴏɴ Nᴀᴍᴇ: {name}
