@@ -9,6 +9,7 @@ autodel_cmd_pic = "https://envs.sh/Vxc.jpg"
 
 #start message
 START_MSG = """<b>⚡ Hᴇʏ, {mention} ~
+
 <blockquote expandable> Wʜᴇɴ ᴄʜᴀᴏꜱ ʀɪꜱᴇꜱ ᴀɢᴀɪɴꜱᴛ ᴍᴇ, I ᴀɴꜱᴡᴇʀ ᴡɪᴛʜ ᴄᴏᴜʀᴀɢᴇ ʙʀɪɢʜᴛ ᴇɴᴏᴜɢʜ ᴛᴏ ꜱᴇᴛ ᴛʜᴇ ꜱᴛᴀʀꜱ ᴀʙʟᴀᴢᴇ.</blockquote></b>"""
 
 #Force sub message 
