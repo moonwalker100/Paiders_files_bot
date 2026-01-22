@@ -92,6 +92,20 @@ async def cb_handler(client: Bot, query: CallbackQuery):
                 [InlineKeyboardButton('• Bᴀᴄᴋ', callback_data='start'), InlineKeyboardButton('Cʟᴏsᴇ •', callback_data='close')]
             ]),
         )
+
+    elif data == "features":
+        await query.edit_message_media(
+            InputMediaPhoto(
+                "https://graph.org/file/7c2d5b1c9f2c7d9e4f3a2.jpg",
+                FEATURES_TXT
+            ),
+            reply_markup=InlineKeyboardMarkup([
+                [
+                    InlineKeyboardButton('• Bᴀᴄᴋ', callback_data='start'),
+                    InlineKeyboardButton('Cʟᴏsᴇ •', callback_data='close')
+                ]
+            ]),
+        )
         
     elif data == "setting":
         await query.edit_message_media(InputMediaPhoto(random.choice(PICS), "<b>Pʟᴇᴀsᴇ wᴀɪᴛ !\n\n<i>🔄 Rᴇᴛʀɪᴇᴠɪɴɢ ᴀʟʟ Sᴇᴛᴛɪɴɢs...</i></b>"))
