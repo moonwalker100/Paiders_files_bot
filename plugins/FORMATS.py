@@ -50,6 +50,12 @@ ABOUT_TXT = """<b>🤖 ᴍʏ ɴᴀᴍᴇ: {botname}
 » ʟɪʙʀᴀʀʏ: <a href=https://docs.pyrogram.org/>Pʏʀᴏɢʀᴀᴍ ᴠ2</a>
 » ᴅᴇᴠᴇʟᴏᴘᴇʀ: <a href=https://t.me/Here_remo>Ꮢᴇᴍᴏ</a></blockquote></b>"""
 
+FEATURES_TXT = """<b>📜 𝗙𝗘𝗔𝗧𝗨𝗥𝗘𝗦 𝗢𝗙 𝗧𝗛𝗜𝗦 𝗕𝗢𝗧
+
+» Cʟɪᴄᴋ Bᴇʟᴏᴡ Tᴏ Lᴇᴀʀɴ Aʙᴏᴜᴛ Tʜᴇ Bᴏᴛ’ꜱ Fᴇᴀᴛᴜʀᴇꜱ <a href=https://t.me/Here_remo>Ꮢᴇᴍᴏ 🜲</a>
+
+<blockquote>Iɴ ᴀᴅᴅɪᴛɪᴏɴ ᴛᴏ ᴛʜᴇ ᴀʙᴏᴠᴇ, Mᴏʀᴇ ᴜꜱᴇʀ-ꜰʀɪᴇɴᴅʟʏ ᴀɴᴅ ꜱᴍᴏᴏᴛʜ ɪɴᴛᴇʀᴀᴄᴛɪᴏɴ ꜰᴇᴀᴛᴜʀᴇꜱ ʜᴀᴠᴇ ʙᴇᴇɴ ᴀᴅᴅᴇᴅ ᴛʜᴀᴛ ᴘʀᴏᴠɪᴅᴇ ꜰᴀꜱᴛ ʀᴇꜱᴘᴏɴꜱᴇ. Fᴇᴇʟ ꜰʀᴇᴇ ᴛᴏ ᴄᴏɴᴛᴀᴄᴛ ᴛʜᴇ 🧑‍💻 Dᴇᴠᴇʟᴏᴘᴇʀ: @Here_remo</blockquote></b>"""
+
 SETTING_TXT = """<b>⚙️ 𝗖𝗢𝗡𝗙𝗜𝗚𝗨𝗥𝗔𝗧𝗜𝗢𝗡</b>
 <blockquote expandable>◈ ᴛᴏᴛᴀʟ ғᴏʀᴄᴇ sᴜʙ ᴄʜᴀɴɴᴇʟ:  <b>{total_fsub}</b>
 ◈ ᴛᴏᴛᴀʟ ᴀᴅᴍɪɴs:  <b>{total_admin}</b>
