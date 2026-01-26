@@ -82,7 +82,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         user_link = f"https://t.me/{user.username}" if user.username else f"tg://openmessage?user_id={OWNER_ID}" 
         ownername = f"<a href={user_link}>{user.first_name}</a>" if user.first_name else f"<a href={user_link}>no name !</a>"
         await query.edit_message_media(
-            InputMediaPhoto("https://graph.org/file/f6c86cba587cfb618b814-95c51319d98509747e.jpg", 
+            InputMediaPhoto("https://graph.org/file/538b82fce880148934408-b78d6217e4a93ce60c.jpg", 
                             ABOUT_TXT.format(
                                 botname = client.name,
                                 ownername = ownername, 
@@ -96,7 +96,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
     elif data == "features":
         await query.edit_message_media(
             InputMediaPhoto(
-                "https://graph.org/file/7c2d5b1c9f2c7d9e4f3a2.jpg",
+                "https://graph.org/file/a5deae56a0fcc8fd0e1ff-bc39a62881528cf169.jpg",
                 FEATURES_TXT
             ),
             reply_markup=InlineKeyboardMarkup([
